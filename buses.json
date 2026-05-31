@@ -48,23 +48,7 @@
           "bus": {
             "numeroBus": 4,
             "tipoBus": "N",
-            "inspectorOcupado": true,
-            "ticketEnAtencion": {
-              "nombre": "Quito",
-              "id": 45,
-              "edad": 13,
-              "monedaCuenta": "COLONES",
-              "horaCompra": "06/04/2026 10:41:58",
-              "fechaHoraAbordaje": "NA",
-              "servicio": "REGULAR",
-              "tipoBus": "N",
-              "estadoTicket": "En Atencion",
-              "fechaHoraAtencion": "NA",
-              "terminalCompra": "BusNovaTech",
-              "numeroBusAbordado": 0,
-              "montoCobrado": 0.0,
-              "pagado": false
-            },
+            "inspectorOcupado": false,
             "filaEspera": {
               "cabeza": {
                 "valor": {
@@ -86,10 +70,20 @@
               },
               "tamano": 1
             }
+          },
+          "siguiente": {
+            "bus": {
+              "numeroBus": 5,
+              "tipoBus": "N",
+              "inspectorOcupado": false,
+              "filaEspera": {
+                "tamano": 0
+              }
+            }
           }
         }
       }
     }
   },
-  "tamano": 4
+  "tamano": 5
 }

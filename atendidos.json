@@ -83,11 +83,47 @@
               "numeroBusAbordado": 3,
               "montoCobrado": 3000.0,
               "pagado": true
+            },
+            "siguiente": {
+              "valor": {
+                "nombre": "Nicolas",
+                "id": 119470257,
+                "edad": 20,
+                "monedaCuenta": "CRC",
+                "horaCompra": "31/05/2026 00:50:09",
+                "fechaHoraAbordaje": "31/05/2026 01:10:01",
+                "servicio": "REGULAR",
+                "tipoBus": "D",
+                "estadoTicket": "Atendido",
+                "fechaHoraAtencion": "31/05/2026 01:10:01",
+                "terminalCompra": "BusNovaTech",
+                "numeroBusAbordado": 2,
+                "montoCobrado": 3000.0,
+                "pagado": true
+              },
+              "siguiente": {
+                "valor": {
+                  "nombre": "Quito",
+                  "id": 45,
+                  "edad": 13,
+                  "monedaCuenta": "COLONES",
+                  "horaCompra": "06/04/2026 10:41:58",
+                  "fechaHoraAbordaje": "31/05/2026 01:10:03",
+                  "servicio": "REGULAR",
+                  "tipoBus": "N",
+                  "estadoTicket": "Atendido",
+                  "fechaHoraAtencion": "31/05/2026 01:10:03",
+                  "terminalCompra": "BusNovaTech",
+                  "numeroBusAbordado": 4,
+                  "montoCobrado": 3000.0,
+                  "pagado": true
+                }
+              }
             }
           }
         }
       }
     }
   },
-  "tamano": 5
+  "tamano": 7
 }

@@ -1,6 +1,6 @@
 {
   "nombreTerminal":"BusNovaTech",
-  "cantidadBuses":4,
+  "cantidadBuses":5,
   "usuarios":[
     {"nombreUsuario":"Admin","contrasena":"123"},
     {"nombreUsuario":"Lafith","contrasena":"123"}

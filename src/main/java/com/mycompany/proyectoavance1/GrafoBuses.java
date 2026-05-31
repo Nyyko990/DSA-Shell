@@ -70,8 +70,6 @@ public class GrafoBuses {
     public boolean existeLocalidad(String nombre) {
         return buscarNodoLocalidad(nombre) != null;
     }
- 
-   }
 
     /**
      * Agrega una ruta entre dos localidades.
