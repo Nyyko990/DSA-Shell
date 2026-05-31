@@ -1,0 +1,95 @@
+{
+  "cabeza": {
+    "bus": {
+      "numeroBus": 1,
+      "tipoBus": "P",
+      "inspectorOcupado": false,
+      "filaEspera": {
+        "tamano": 0
+      }
+    },
+    "siguiente": {
+      "bus": {
+        "numeroBus": 2,
+        "tipoBus": "D",
+        "inspectorOcupado": false,
+        "filaEspera": {
+          "tamano": 0
+        }
+      },
+      "siguiente": {
+        "bus": {
+          "numeroBus": 3,
+          "tipoBus": "N",
+          "inspectorOcupado": false,
+          "filaEspera": {
+            "cabeza": {
+              "valor": {
+                "nombre": "No deberia seguir este",
+                "id": 10,
+                "edad": 99,
+                "monedaCuenta": "COLONES",
+                "horaCompra": "06/04/2026 10:45:41",
+                "fechaHoraAbordaje": "NA",
+                "servicio": "REGULAR",
+                "tipoBus": "N",
+                "estadoTicket": "Pendiente",
+                "fechaHoraAtencion": "NA",
+                "terminalCompra": "BusNovaTech",
+                "numeroBusAbordado": 0,
+                "montoCobrado": 0.0,
+                "pagado": false
+              }
+            },
+            "tamano": 1
+          }
+        },
+        "siguiente": {
+          "bus": {
+            "numeroBus": 4,
+            "tipoBus": "N",
+            "inspectorOcupado": true,
+            "ticketEnAtencion": {
+              "nombre": "Quito",
+              "id": 45,
+              "edad": 13,
+              "monedaCuenta": "COLONES",
+              "horaCompra": "06/04/2026 10:41:58",
+              "fechaHoraAbordaje": "NA",
+              "servicio": "REGULAR",
+              "tipoBus": "N",
+              "estadoTicket": "En Atencion",
+              "fechaHoraAtencion": "NA",
+              "terminalCompra": "BusNovaTech",
+              "numeroBusAbordado": 0,
+              "montoCobrado": 0.0,
+              "pagado": false
+            },
+            "filaEspera": {
+              "cabeza": {
+                "valor": {
+                  "nombre": "Luci",
+                  "id": 91,
+                  "edad": 15,
+                  "monedaCuenta": "COLONES",
+                  "horaCompra": "06/04/2026 10:44:25",
+                  "fechaHoraAbordaje": "NA",
+                  "servicio": "REGULAR",
+                  "tipoBus": "N",
+                  "estadoTicket": "Pendiente",
+                  "fechaHoraAtencion": "NA",
+                  "terminalCompra": "BusNovaTech",
+                  "numeroBusAbordado": 0,
+                  "montoCobrado": 0.0,
+                  "pagado": false
+                }
+              },
+              "tamano": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "tamano": 4
+}

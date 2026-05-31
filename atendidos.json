@@ -1,0 +1,93 @@
+{
+  "cabeza": {
+    "valor": {
+      "nombre": "Juan",
+      "id": 45,
+      "edad": 24,
+      "monedaCuenta": "COLONES",
+      "horaCompra": "22/03/2026 12:22:18",
+      "fechaHoraAbordaje": "22/03/2026 12:22:53",
+      "servicio": "REGULAR",
+      "tipoBus": "D",
+      "estadoTicket": "Atendido",
+      "fechaHoraAtencion": "22/03/2026 12:22:53",
+      "terminalCompra": "BusNovaTech",
+      "numeroBusAbordado": 2,
+      "montoCobrado": 3000.0,
+      "pagado": true
+    },
+    "siguiente": {
+      "valor": {
+        "nombre": "Danie;",
+        "id": 90,
+        "edad": 11,
+        "monedaCuenta": "COLONES",
+        "horaCompra": "06/04/2026 10:40:16",
+        "fechaHoraAbordaje": "06/04/2026 10:42:39",
+        "servicio": "REGULAR",
+        "tipoBus": "N",
+        "estadoTicket": "Atendido",
+        "fechaHoraAtencion": "06/04/2026 10:42:39",
+        "terminalCompra": "BusNovaTech",
+        "numeroBusAbordado": 3,
+        "montoCobrado": 3000.0,
+        "pagado": true
+      },
+      "siguiente": {
+        "valor": {
+          "nombre": "Adriel",
+          "id": 56,
+          "edad": 12,
+          "monedaCuenta": "COLONES",
+          "horaCompra": "06/04/2026 10:40:39",
+          "fechaHoraAbordaje": "06/04/2026 10:42:58",
+          "servicio": "REGULAR",
+          "tipoBus": "N",
+          "estadoTicket": "Atendido",
+          "fechaHoraAtencion": "06/04/2026 10:42:58",
+          "terminalCompra": "BusNovaTech",
+          "numeroBusAbordado": 3,
+          "montoCobrado": 3000.0,
+          "pagado": true
+        },
+        "siguiente": {
+          "valor": {
+            "nombre": "Luigui",
+            "id": 78,
+            "edad": 47,
+            "monedaCuenta": "COLONES",
+            "horaCompra": "06/04/2026 10:43:44",
+            "fechaHoraAbordaje": "06/04/2026 10:44:55",
+            "servicio": "REGULAR",
+            "tipoBus": "N",
+            "estadoTicket": "Atendido",
+            "fechaHoraAtencion": "06/04/2026 10:44:55",
+            "terminalCompra": "BusNovaTech",
+            "numeroBusAbordado": 3,
+            "montoCobrado": 3000.0,
+            "pagado": true
+          },
+          "siguiente": {
+            "valor": {
+              "nombre": "Tatiana",
+              "id": 78,
+              "edad": 14,
+              "monedaCuenta": "COLONES",
+              "horaCompra": "06/04/2026 10:44:08",
+              "fechaHoraAbordaje": "06/04/2026 10:45:51",
+              "servicio": "REGULAR",
+              "tipoBus": "N",
+              "estadoTicket": "Atendido",
+              "fechaHoraAtencion": "06/04/2026 10:45:51",
+              "terminalCompra": "BusNovaTech",
+              "numeroBusAbordado": 3,
+              "montoCobrado": 3000.0,
+              "pagado": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "tamano": 5
+}
