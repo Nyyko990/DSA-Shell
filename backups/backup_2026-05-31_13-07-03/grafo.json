@@ -1,0 +1,41 @@
+{
+  "localidades": [
+    {
+      "nombre": "Heredia",
+      "rutas": [
+        {
+          "destino": "oxigeno",
+          "peso": 4.0
+        },
+        {
+          "destino": "una",
+          "peso": 9.0
+        },
+        {
+          "destino": "calle blancos",
+          "peso": 67.0
+        }
+      ]
+    },
+    {
+      "nombre": "oxigeno",
+      "rutas": [
+      ]
+    },
+    {
+      "nombre": "ucr",
+      "rutas": [
+      ]
+    },
+    {
+      "nombre": "una",
+      "rutas": [
+      ]
+    },
+    {
+      "nombre": "calle blancos",
+      "rutas": [
+      ]
+    }
+  ]
+}

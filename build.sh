@@ -23,7 +23,7 @@ REPORT_DIR="reports"
 TIMESTAMP=$(date '+%Y-%m-%d_%H-%M-%S')
 LOG_FILE="${LOG_DIR}/build_${TIMESTAMP}.log"
 REPORT_FILE="${REPORT_DIR}/report_${TIMESTAMP}.txt"
-MAVEN_CMD="mvn"
+MAVEN_CMD=""   # se resuelve dinámicamente en preflight_checks
 
 # ── Contadores ───────────────────────────────────────────────────────────────
 STEPS_TOTAL=0
@@ -60,6 +60,44 @@ elapsed() {
     echo $((end - START_TIME))
 }
 
+# ── Detección automática de Maven ────────────────────────────────────────────
+find_maven() {
+    # 1. mvn en el PATH
+    if command -v mvn &>/dev/null; then echo "mvn"; return 0; fi
+
+    # 2. Variables de entorno
+    [[ -n "${M2_HOME:-}"    && -x "${M2_HOME}/bin/mvn"    ]] && { echo "${M2_HOME}/bin/mvn";    return 0; }
+    [[ -n "${MAVEN_HOME:-}" && -x "${MAVEN_HOME}/bin/mvn" ]] && { echo "${MAVEN_HOME}/bin/mvn"; return 0; }
+
+    # 3. NetBeans bundled Maven — rutas de Windows en Git Bash
+    local nb_base="/c/Program Files"
+    for nb_dir in \
+        "Apache NetBeans" \
+        "NetBeans-21" "NetBeans-22" "NetBeans-23" "NetBeans-24" \
+        "Apache NetBeans 21" "Apache NetBeans 22" "Apache NetBeans 23" "Apache NetBeans 24"
+    do
+        local c="${nb_base}/${nb_dir}/java/maven/bin/mvn"
+        [[ -x "$c" ]] && { echo "$c"; return 0; }
+    done
+
+    # 4. Maven standalone en rutas frecuentes
+    for p in \
+        "${LOCALAPPDATA:-$HOME/AppData/Local}/Programs/NetBeans/java/maven/bin/mvn" \
+        "$HOME/.sdkman/candidates/maven/current/bin/mvn" \
+        "/c/opt/maven/bin/mvn" "/c/tools/maven/bin/mvn" \
+        "/usr/local/bin/mvn" "/usr/share/maven/bin/mvn"
+    do
+        [[ -x "$p" ]] && { echo "$p"; return 0; }
+    done
+
+    # 5. Búsqueda dinámica en Program Files como último recurso
+    local dyn
+    dyn=$(find "/c/Program Files" -name "mvn" -maxdepth 6 -type f 2>/dev/null | head -1 || true)
+    [[ -n "$dyn" ]] && { echo "$dyn"; return 0; }
+
+    return 1
+}
+
 # ── Setup de directorios ──────────────────────────────────────────────────────
 init_dirs() {
     mkdir -p "$LOG_DIR" "$REPORT_DIR"
@@ -84,12 +122,13 @@ preflight_checks() {
     fi
 
     step "Verificando Maven"
-    if command -v "$MAVEN_CMD" &>/dev/null; then
+    if MAVEN_CMD=$(find_maven); then
         local mver
         mver=$("$MAVEN_CMD" -version 2>&1 | head -1)
         success "Maven encontrado: $mver"
+        info "Ruta: $MAVEN_CMD"
     else
-        error "Maven no encontrado. Asegurate de tener mvn en el PATH."
+        error "Maven no encontrado. Instalalo o definí M2_HOME / MAVEN_HOME."
         exit 1
     fi
 

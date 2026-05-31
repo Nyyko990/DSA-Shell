@@ -1,0 +1,19 @@
+============================================
+  BusNovaTech Build Log — 2026-05-31_12-59-45
+============================================
+
+[1m[0;36m════════════════════════════════════════[0m
+[1m  BusNovaTech Build Script[0m
+[1m[0;36m════════════════════════════════════════[0m
+[0;36m[INFO][0m  Inicio: 2026-05-31_12-59-45
+[0;36m[INFO][0m  Directorio: /c/Users/nykom/Documents/DSA-Shell
+
+[1m[0;36m════════════════════════════════════════[0m
+[1m  Pre-flight Checks[0m
+[1m[0;36m════════════════════════════════════════[0m
+
+[1m[STEP 1][0m Verificando Java
+[0;32m[OK][0m    Java encontrado: java version "24.0.1" 2025-04-15
+
+[1m[STEP 2][0m Verificando Maven
+[0;31m[FAIL][0m  Maven no encontrado. Asegurate de tener mvn en el PATH.

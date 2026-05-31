@@ -1,0 +1,25 @@
+
+[1m[0;36m════════════════════════════════════════[0m
+[1m  BusNovaTech — Backup de Datos[0m
+[1m[0;36m════════════════════════════════════════[0m
+[0;36m[INFO][0m  Fecha:   2026-05-31_13-07-03
+[0;36m[INFO][0m  Destino: backups/backup_2026-05-31_13-07-03
+
+[1m[0;36m════════════════════════════════════════[0m
+[1m  Copiando archivos JSON[0m
+[1m[0;36m════════════════════════════════════════[0m
+[0;32m[OK][0m    atendidos.json  (8.0K)
+[0;32m[OK][0m    buses.json  (4.0K)
+[0;32m[OK][0m    colas.json  (1.0K)
+[0;32m[OK][0m    config.json  (1.0K)
+[0;32m[OK][0m    grafo.json  (1.0K)
+[0;32m[OK][0m    tiquetes.json  (8.0K)
+
+[1m[0;36m════════════════════════════════════════[0m
+[1m  Resumen[0m
+[1m[0;36m════════════════════════════════════════[0m
+[0;36m[INFO][0m  Archivos respaldados : 6
+[0;36m[INFO][0m  Tamaño total         : 27K
+[0;36m[INFO][0m  Ubicación            : backups/backup_2026-05-31_13-07-03
+[2026-05-31_13-07-03] Backup: 6 archivo(s) → backups/backup_2026-05-31_13-07-03 (total: 27K)
+[0;32m[OK][0m    ✅  Backup completado exitosamente.
